@@ -18,8 +18,8 @@ There are two ways to install mctools:
 1. Download a pre-built binary from the latest release
 
    - Visit the releases page: https://github.com/FewLy-Torch-1861/mctools-rs/releases
-   - Download the binary for your platform (for example: Linux, macOS, or Windows).
-   - Move the `mctools` (or `mctools.exe` on Windows) binary to a directory on your PATH (for example `~/.local/bin` on Linux/macOS or `C:\Program Files\` on Windows).
+   - Download the appropriate asset for your platform (for example: Linux, macOS, or Windows).
+   - Extract the archive if necessary and move the `mctools` (or `mctools.exe` on Windows) binary to a directory on your PATH (for example `~/.local/bin` on Linux/macOS or `C:\Program Files\` on Windows).
    - Verify installation:
      ```bash
      mctools --help
@@ -28,23 +28,20 @@ There are two ways to install mctools:
 2. Clone the repository and build from source
 
    - Clone the repository:
-
      ```bash
      git clone https://github.com/FewLy-Torch-1861/mctools-rs.git
      cd mctools-rs
      ```
 
    - Install the binary using Cargo (this installs to your Cargo bin path, typically `~/.cargo/bin`):
-
      ```bash
      cargo install --path .
      ```
 
    - Or build locally for testing without installing:
-
      ```bash
      cargo build --release
-     # The optimized binary will be at target/release/mctools (or target/release/mctools-rs depending on the crate name)
+     # The optimized binary will be at target/release/mctools
      ```
 
    - After installing with Cargo, ensure your Cargo bin path is on your PATH:

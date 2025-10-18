@@ -1,8 +1,7 @@
 use clap::{Parser, Subcommand};
 
 #[derive(Parser, Debug)]
-#[command(author, version, about, long_about = None)]
-#[command(help_template = "Simple misc minecraft tools.\n\n{usage-heading}\n{all-args}")]
+#[command(author, version, about = "Simple misc minecraft tools.", long_about = None)]
 struct Cli {
   #[command(subcommand)]
   command: Commands,

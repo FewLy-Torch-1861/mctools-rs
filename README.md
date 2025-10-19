@@ -51,7 +51,7 @@ There are two ways to install mctools:
 
 ## Usage
 
-This tool provides subcommands for different functionalities.
+This tool provides subcommands for different functionalities. (but currently only has one command)
 
 ### `nether-coord`
 
